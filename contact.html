@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Initiative Classe Moyenne Genève</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact & Engagement</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="projet.html">Le Projet</a>
+      <a href="temoignages.html">Témoignages</a>
+      <a href="ressources.html">Ressources</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Contactez-nous</h2>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/merci.html">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none;">
+          <label>Ne pas remplir ce champ :
+            <input name="bot-field">
+          </label>
+        </p>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message ou témoignage :</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+      <p>
+        Ou envoyez-nous un email à : <a href="mailto:initiative.classe.moyenne.ge@gmail.com">initiative.classe.moyenne.ge@gmail.com</a>
+      </p>
+    </section>
+    <section>
+      <h2>S’engager</h2>
+      <ul>
+        <li>Je souhaite aider à la collecte de signatures</li>
+        <li>Je veux relayer l’initiative sur les réseaux sociaux</li>
+        <li>Je souhaite organiser un événement local</li>
+      </ul>
+      <p>Indiquez vos disponibilités dans le message ou contactez-nous directement.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Initiative Classe Moyenne Genève</p>
+  </footer>
+</body>
+</html>
